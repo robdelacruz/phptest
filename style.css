@@ -6,8 +6,8 @@ html {
     line-height: 1.25rem;
     1font-size: 1rem;
     1line-height: 1.25rem;
-    font-family: sans-serif;
-    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-family: monospace;
+    1font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h2 {
     border-color: rgb(107,114,128);
     padding-bottom: 0.25rem;
     font-size: inherit;
-    border-color: #00ff66;
+    border-color: #33ff00;
 }
 
 .fg-light {
@@ -52,7 +52,7 @@ h2 {
     1background-color: rgb(31,41,55);
     1color: rgb(229,231,235);
     padding: 0.5rem 1rem;
-    width: 20rem;
+    width: 30rem;
     margin-bottom: 10px;
     border: 1px dashed;
 }

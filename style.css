@@ -20,6 +20,8 @@
     --bg1: var(--black1);
     --bg2: var(--grey1);
     --bg3: var(--grey2);
+
+    --border1: var(--grey1);
 }
 
 
@@ -35,7 +37,7 @@ html {
     margin: 0.5rem 0;
     padding-bottom: 0.25rem;
     border-bottom: 1px solid;
-    border-color: var(--fg2);
+    border-color: var(--border1);
 }
 
 h1, h2, h3, h4, h5 {
@@ -49,7 +51,12 @@ h1, h2, h3, h4, h5 {
     width: 30rem;
     margin-bottom: 10px;
     border: 1px dashed;
-    border-color: var(--fg2);
+    border: 1px solid;
+    border-color: var(--border1);
+    border-color: #808080;
+    box-shadow: 4px 7px 7px #404040;
+    box-shadow: 4px 4px 10px #404040;
+    border-radius: 10px;
 }
 
 pre {

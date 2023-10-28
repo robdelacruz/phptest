@@ -22,6 +22,8 @@
     --bg3: var(--grey2);
 
     --border1: var(--grey1);
+
+    --shade1: rgb(22, 24, 28);
 }
 
 
@@ -53,15 +55,21 @@ h1, h2, h3, h4, h5 {
     border: 1px dashed;
     border: 1px solid;
     border-color: var(--border1);
-    border-color: #808080;
-    box-shadow: 4px 7px 7px #404040;
-    box-shadow: 4px 4px 10px #404040;
     border-radius: 10px;
+}
+
+.shade {
+    background-color: var(--shade1);
+    color: var(--white1);
+}
+
+.shadow {
+    box-shadow: 4px 4px 10px #404040;
 }
 
 pre {
     padding: 0.5rem 0;
     overflow: auto;
-    background-color: var(--bg2);
+    background-color: var(--shade1);
 }
 

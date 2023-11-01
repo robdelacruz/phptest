@@ -8,12 +8,8 @@
     --amber2: #ffcc00;
     --grey1:  #282828;
     --grey2: rgb(17,24,39);
-    --black2: #272628;
-    --blue2: #072f49;
-    --blue3: #5da9d1;
-    --blue4: #83cff6;
 
-    --fg1: var(--blue3);
+    --fg1: var(--green1);
     --fg2: var(--green2);
     --fg3: var(--green3);
 /*
@@ -21,12 +17,11 @@
     --fg2: var(--amber2);
     --fg3: var(--amber2);
 */
-    --bg1: var(--black2);
-    --bg2: var(--blue2);
+    --bg1: var(--black1);
+    --bg2: var(--grey1);
     --bg3: var(--grey2);
 
-    --border1: var(--blue3);
-    --border2: var(--grey2);
+    --border1: var(--grey1);
 
     --shade1: rgb(22, 24, 28);
 }
@@ -41,11 +36,9 @@ html {
 }
 
 .heading {
-    color: var(--blue4);
-    text-transform: uppercase;
     margin: 0.5rem 0;
     padding-bottom: 0.25rem;
-    1border-bottom: 1px solid;
+    border-bottom: 1px solid;
     border-color: var(--border1);
 }
 
@@ -56,7 +49,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .box {
-    background-color: var(--bg2);
     padding: 0.5rem 1rem;
     width: 30rem;
     margin-bottom: 10px;
@@ -69,7 +61,6 @@ h1, h2, h3, h4, h5 {
 .shade {
     background-color: var(--shade1);
     color: var(--white1);
-    border-color: var(--border2);
 }
 
 .shadow {

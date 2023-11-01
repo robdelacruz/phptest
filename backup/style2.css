@@ -11,7 +11,6 @@
     --black2: #272628;
     --blue2: #072f49;
     --blue3: #5da9d1;
-    --blue4: #83cff6;
 
     --fg1: var(--blue3);
     --fg2: var(--green2);
@@ -26,7 +25,6 @@
     --bg3: var(--grey2);
 
     --border1: var(--blue3);
-    --border2: var(--grey2);
 
     --shade1: rgb(22, 24, 28);
 }
@@ -41,11 +39,9 @@ html {
 }
 
 .heading {
-    color: var(--blue4);
-    text-transform: uppercase;
     margin: 0.5rem 0;
     padding-bottom: 0.25rem;
-    1border-bottom: 1px solid;
+    border-bottom: 1px solid;
     border-color: var(--border1);
 }
 
@@ -56,7 +52,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .box {
-    background-color: var(--bg2);
     padding: 0.5rem 1rem;
     width: 30rem;
     margin-bottom: 10px;
@@ -69,7 +64,6 @@ h1, h2, h3, h4, h5 {
 .shade {
     background-color: var(--shade1);
     color: var(--white1);
-    border-color: var(--border2);
 }
 
 .shadow {

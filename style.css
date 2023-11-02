@@ -1,6 +1,8 @@
 :root {
     --white1: #ffffff;
     --black1: #000000;
+    --black2: #272628;
+    --black3: rgb(22, 24, 28);
     --green1: #33ff00;
     --green2: #00ff33;
     --green3: #00ff66;
@@ -8,7 +10,6 @@
     --amber2: #ffcc00;
     --grey1:  #282828;
     --grey2: rgb(17,24,39);
-    --black2: #272628;
     --blue2: #072f49;
     --blue3: #5da9d1;
     --blue4: #83cff6;
@@ -27,26 +28,82 @@
 
     --border1: var(--blue3);
     --border2: var(--grey2);
-
-    --shade1: rgb(22, 24, 28);
 }
 
-
 html {
-    background-color: var(--bg1);
-    color: var(--fg1);
     font-size: .75rem;
     line-height: 1.25rem;
     font-family: monospace;
 }
+.dark1 {
+    background-color: var(--black2);
+    color: var(--white1);
+}
+.dark1 .box {
+    background-color: var(--black3);
+    border-color: var(--grey2);
+}
+
+.amber {
+    background-color: var(--black2);
+    color: var(--amber1);
+}
+.amber .box {
+    background-color: var(--black3);
+    border-color: var(--grey2);
+}
+.amber .shade {
+    background-color: var(--black2);
+    border-color: var(--grey2);
+    color: var(--white1);
+}
+.amber pre {
+    background-color: var(--black2);
+    color: var(--white1);
+}
+
+.green {
+    background-color: var(--black2);
+    color: var(--green1);
+}
+.green .box {
+    background-color: var(--black3);
+    border-color: var(--grey2);
+}
+.green .shade {
+    background-color: var(--black2);
+    border-color: var(--grey2);
+}
+.green pre {
+    background-color: var(--black2);
+    color: var(--white1);
+}
+
+.blue {
+    background-color: var(--black2);
+    color: var(--blue3);
+}
+.blue .box {
+    background-color: var(--blue2);
+    border-color: var(--blue3);
+}
+.blue .shade {
+    background-color: var(--black3);
+    color: var(--blue3);
+    border-color: var(--grey2);
+}
+.blue .heading{
+    color: var(--blue4);
+}
+.blue pre {
+    background-color: var(--black3);
+    color: var(--blue3);
+}
 
 .heading {
-    color: var(--blue4);
     text-transform: uppercase;
     margin: 0.5rem 0;
     padding-bottom: 0.25rem;
-    1border-bottom: 1px solid;
-    border-color: var(--border1);
 }
 
 h1, h2, h3, h4, h5 {
@@ -62,7 +119,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
     border: 1px dashed;
     border: 1px solid;
-    border-color: var(--border1);
     border-radius: 10px;
 }
 
@@ -72,13 +128,12 @@ h1, h2, h3, h4, h5 {
     border-color: var(--border2);
 }
 
-.shadow {
-    box-shadow: 4px 4px 10px #404040;
-}
-
 pre {
     padding: 0.5rem 0;
     overflow: auto;
-    background-color: var(--shade1);
+}
+
+.shadow {
+    box-shadow: 4px 4px 10px #404040;
 }
 

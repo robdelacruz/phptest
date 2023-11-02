@@ -13,21 +13,6 @@
     --blue2: #072f49;
     --blue3: #5da9d1;
     --blue4: #83cff6;
-
-    --fg1: var(--blue3);
-    --fg2: var(--green2);
-    --fg3: var(--green3);
-/*
-    --fg1: var(--amber1);
-    --fg2: var(--amber2);
-    --fg3: var(--amber2);
-*/
-    --bg1: var(--black2);
-    --bg2: var(--blue2);
-    --bg3: var(--grey2);
-
-    --border1: var(--blue3);
-    --border2: var(--grey2);
 }
 
 html {
@@ -42,6 +27,15 @@ html {
 .dark1 .box {
     background-color: var(--black3);
     border-color: var(--grey2);
+}
+.dark1 .shade {
+    background-color: var(--grey2);
+    border-color: var(--grey1);
+    color: var(--white1);
+}
+.dark1 pre {
+    background-color: var(--grey1);
+    color: var(--white1);
 }
 
 .amber {
@@ -113,19 +107,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .box {
-    background-color: var(--bg2);
     padding: 0.5rem 1rem;
     width: 30rem;
     margin-bottom: 10px;
     border: 1px dashed;
     border: 1px solid;
     border-radius: 10px;
-}
-
-.shade {
-    background-color: var(--shade1);
-    color: var(--white1);
-    border-color: var(--border2);
 }
 
 pre {

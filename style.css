@@ -4,6 +4,7 @@
 
 :root {
     --white1: #ffffff;
+    --white2: #e7e9ea;
     --black1: #000000;
     --black2: #272628;
     --black3: rgb(22, 24, 28);
@@ -65,7 +66,7 @@ pre {
 
 .dark1 {
     background-color: var(--black2);
-    color: var(--white1);
+    color: var(--white2);
 }
 .dark1 .box {
     background-color: var(--black3);
@@ -74,11 +75,11 @@ pre {
 .dark1 .shade {
     background-color: var(--grey2);
     border-color: var(--grey1);
-    color: var(--white1);
+    color: var(--white2);
 }
 .dark1 pre {
     background-color: var(--grey1);
-    color: var(--white1);
+    color: var(--white2);
 }
 .amber {
     background-color: var(--black2);
@@ -91,11 +92,11 @@ pre {
 .amber .shade {
     background-color: var(--black2);
     border-color: var(--grey2);
-    color: var(--white1);
+    color: var(--white2);
 }
 .amber pre {
     background-color: var(--black2);
-    color: var(--white1);
+    color: var(--white2);
 }
 .green {
     background-color: var(--black2);
@@ -111,7 +112,7 @@ pre {
 }
 .green pre {
     background-color: var(--black2);
-    color: var(--white1);
+    color: var(--white2);
 }
 .blue {
     background-color: var(--black2);

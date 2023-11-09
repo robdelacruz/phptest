@@ -7,17 +7,18 @@
     --white2: #e7e9ea;
     --black1: #000000;
     --black2: #272628;
-    --black3: rgb(22, 24, 28);
+    --black3: #16181c;
     --green1: #33ff00;
     --green2: #00ff33;
     --green3: #00ff66;
     --amber1: #ffb000;
     --amber2: #ffcc00;
     --grey1:  #282828;
-    --grey2: rgb(17,24,39);
-    --blue2: #072f49;
-    --blue3: #5da9d1;
-    --blue4: #83cff6;
+    --grey2:  #111827;
+    --grey3:  #9ca3af;
+    --blue2:  #072f49;
+    --blue3:  #5da9d1;
+    --blue4:  #83cff6;
 }
 
 .max-w-xs {max-width: 320px;}
@@ -57,7 +58,7 @@ h1, h2, h3, h4, h5 {
     border-radius: 10px;
 }
 pre {
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
     overflow: auto;
 }
 .shadow {
@@ -81,6 +82,11 @@ pre {
     background-color: var(--grey1);
     color: var(--white2);
 }
+.dark1 .input {
+    background-color: var(--grey1);
+    border: 1px solid var(--grey3);
+    color: var(--white2);
+}
 .amber {
     background-color: var(--black2);
     color: var(--amber1);
@@ -98,6 +104,11 @@ pre {
     background-color: var(--black2);
     color: var(--white2);
 }
+.amber .input {
+    background-color: var(--grey1);
+    border: 1px solid var(--grey3);
+    color: var(--amber1);
+}
 .green {
     background-color: var(--black2);
     color: var(--green1);
@@ -113,6 +124,11 @@ pre {
 .green pre {
     background-color: var(--black2);
     color: var(--white2);
+}
+.green .input {
+    background-color: var(--grey1);
+    border: 1px solid var(--grey3);
+    color: var(--green1);
 }
 .blue {
     background-color: var(--black2);
@@ -133,5 +149,34 @@ pre {
 .blue pre {
     background-color: var(--black3);
     color: var(--blue3);
+}
+.blue .input {
+    background-color: var(--black3);
+    border: 1px solid var(--grey3);
+    color: var(--blue3);
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+}
+
+.basicform > div {
+    margin-bottom: 10px;
+}
+.basicform label {
+    display: block;
+    margin-bottom: 4px;
+}
+.basicform .input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.basicform input, .basicform textarea {
+    border-radius: 5px;
 }
 

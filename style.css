@@ -11,6 +11,7 @@
     --green1: #33ff00;
     --green2: #00ff33;
     --green3: #00ff66;
+    --green4: lightgreen;
     --amber1: #ffb000;
     --amber2: #ffcc00;
     --grey1:  #282828;
@@ -19,6 +20,7 @@
     --blue2:  #072f49;
     --blue3:  #5da9d1;
     --blue4:  #83cff6;
+    --blue5:  #1d9bf0;
 }
 
 .max-w-xs {max-width: 320px;}
@@ -87,6 +89,10 @@ pre {
     border: 1px solid var(--grey3);
     color: var(--white2);
 }
+.dark1 .button {
+    background-color: var(--white2);
+    color: var(--black1);
+}
 .amber {
     background-color: var(--black2);
     color: var(--amber1);
@@ -109,6 +115,10 @@ pre {
     border: 1px solid var(--grey3);
     color: var(--amber1);
 }
+.amber .button {
+    background-color: var(--amber2);
+    color: var(--black1);
+}
 .green {
     background-color: var(--black2);
     color: var(--green1);
@@ -130,6 +140,11 @@ pre {
     border: 1px solid var(--grey3);
     color: var(--green1);
 }
+.green .button {
+    background-color: var(--green4);
+    color: var(--black1);
+}
+
 .blue {
     background-color: var(--black2);
     color: var(--blue3);
@@ -155,6 +170,10 @@ pre {
     border: 1px solid var(--grey3);
     color: var(--blue3);
 }
+.blue .button {
+    background-color: var(--blue5);
+    color: var(--black1);
+}
 
 .row {
     display: flex;
@@ -162,7 +181,11 @@ pre {
 }
 
 .basicform > div {
-    margin-bottom: 10px;
+    margin: 0;
+    padding: 5px 0;
+}
+.basicform .action {
+    margin-top: 5px;
 }
 .basicform label {
     display: block;
@@ -179,4 +202,13 @@ pre {
 .basicform input, .basicform textarea {
     border-radius: 5px;
 }
+.basicform .button {
+    padding: 2px 16px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 10px;
+    border-width: 0;
+}
+
 

@@ -11,12 +11,14 @@
     --green1: #33ff00;
     --green2: #00ff33;
     --green3: #00ff66;
-    --green4: lightgreen;
+    --green4: #90ee90;
     --amber1: #ffb000;
     --amber2: #ffcc00;
     --grey1:  #282828;
     --grey2:  #111827;
     --grey3:  #9ca3af;
+    --grey4:  #d1d5db;
+    --grey5:  #9ca3af;
     --blue2:  #072f49;
     --blue3:  #5da9d1;
     --blue4:  #83cff6;
@@ -35,11 +37,35 @@
 .max-w-6xl {max-width: 1152px;}
 .max-w-7xl {max-width: 1280px;}
 
+.w-xs {width: 320px;}
+.w-sm {width: 384px;}
+.w-md {width: 448px;}
+.w-lg {width: 512px;}
+.w-xl {width: 576px;}
+.w-2xl {width: 672px;}
+.w-3xl {width: 768px;}
+.w-4xl {width: 896px;}
+.w-5xl {width: 1024px;}
+.w-6xl {width: 1152px;}
+.w-7xl {width: 1280px;}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
 html {
     font-size: 14px;
     line-height: 1.5;
     font-family: monospace;
     font-family: arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    margin: 8px;
 }
 .heading {
     text-transform: uppercase;
@@ -47,15 +73,30 @@ html {
     padding-bottom: 0.25rem;
     line-height: 1.2;
 }
-h1, h2, h3, h4, h5 {
+.linklist {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+}
+.pill {
+    padding: 0.5rem 1.2rem;
+    border-radius: 10px;
+}
+.titlebar {
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.titlebar h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.sidebar {
+    width: 320px;
+    padding: 0.5rem 1rem;
 }
 .box {
     padding: 0.5rem 1rem;
-    margin-bottom: 10px;
-    border: 1px dashed;
     border: 1px solid;
     border-radius: 10px;
 }
@@ -63,12 +104,23 @@ pre {
     padding: 0.5rem 1rem;
     overflow: auto;
 }
+a {
+    color: inherit;
+}
 .shadow {
     box-shadow: 4px 4px 10px #404040;
 }
 
 .dark1 {
     background-color: var(--black2);
+    color: var(--white2);
+}
+.dark1 .titlebar {
+    background-color: var(--grey4);
+    color: var(--black2);
+}
+.dark1 .titlebar .pill {
+    background-color: var(--black3);
     color: var(--white2);
 }
 .dark1 .box {
@@ -84,6 +136,9 @@ pre {
     background-color: var(--grey1);
     color: var(--white2);
 }
+.dark1 .heading{
+    color: var(--white2);
+}
 .dark1 .input {
     background-color: var(--grey1);
     border: 1px solid var(--grey3);
@@ -95,6 +150,14 @@ pre {
 }
 .amber {
     background-color: var(--black2);
+    color: var(--amber1);
+}
+.amber .titlebar {
+    background-color: var(--amber2);
+    color: var(--black3);
+}
+.amber .titlebar .pill {
+    background-color: var(--black3);
     color: var(--amber1);
 }
 .amber .box {
@@ -123,6 +186,14 @@ pre {
     background-color: var(--black2);
     color: var(--green1);
 }
+.green .titlebar {
+    background-color: var(--green3);
+    color: var(--black3);
+}
+.green .titlebar .pill {
+    background-color: var(--black3);
+    color: var(--green1);
+}
 .green .box {
     background-color: var(--black3);
     border-color: var(--grey2);
@@ -141,13 +212,21 @@ pre {
     color: var(--green1);
 }
 .green .button {
-    background-color: var(--green4);
+    background-color: var(--green3);
     color: var(--black1);
 }
 
 .blue {
     background-color: var(--black2);
     color: var(--blue3);
+}
+.blue .titlebar {
+    background-color: var(--blue3);
+    color: var(--black3);
+}
+.blue .titlebar .pill {
+    background-color: var(--black3);
+    color: var(--blue4);
 }
 .blue .box {
     background-color: var(--blue2);
@@ -178,6 +257,7 @@ pre {
 .row {
     display: flex;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .basicform > div {

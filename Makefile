@@ -2,6 +2,7 @@
 dep:
 	apt install nginx -y
 	apt install php8.1-fpm -y
+	apt install php8.1-sqlite3 -y
 
 status-nginx:
 	systemctl status nginx

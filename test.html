@@ -13,8 +13,8 @@
 <div class="content">
     <section class="row">
         <div class="box sidebar w-sm">
-            <h2 class="heading">Rob de la Cruz</h2>
-            <ul class="linklist">
+            <h2 class="heading"><a href="#">Rob de la Cruz</a></h2>
+            <ul class="list">
                 <li><a href="#">Profile</a></li>
                 <li><a href="/">Latest Posts</a></li>
                 <li><a href="/">Polls</a></li>
@@ -22,16 +22,16 @@
         </div>
         <div class="box w-xs">
             <h2 class="heading">Login</h2>
-            <form class="basicform">
-                <div>
-                    <label for="username">Username</label>
+            <form class="form">
+                <div class="form_row">
+                    <label class="label" for="username">Username</label>
                     <input class="input" type="text" name="username" id="username" value="">
                 </div>
-                <div>
-                    <label for="password">Password</label>
+                <div class="form_row">
+                    <label class="label" for="password">Password</label>
                     <input class="input" type="password" name="password" id="password" value="">
                 </div>
-                <div class="action">
+                <div class="form_row form_action">
                     <button class="button">Submit</button>
                 </div>
             </form>
@@ -64,17 +64,17 @@
         <div class="box max-w-md">
             <h2 class="heading">This is a heading that took me a long time to write and it probably extends to multiple lines.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <form class="basicform">
-                <div>
-                    <label for="title">Title</label>
+            <form class="form">
+                <div class="form_row">
+                    <label class="label" for="title">Title</label>
                     <input class="input" type="text" name="title" id="title" value="This is a title">
                 </div>
-                <div>
-                    <label for="content">Content</label>
+                <div class="form_row">
+                    <label class="label" for="content">Content</label>
                     <textarea class="input" id="content" name="content" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
                 </div>
-                <div>
-                    <label for="type">Post Type</label>
+                <div class="form_row">
+                    <label class="label" for="type">Post Type</label>
                     <select class="input" id="type" name="type">
                         <option value="blog">Blog</option>
                         <option value="blog">Tweet</option>

@@ -64,6 +64,10 @@ body {
     margin: 0;
     padding: 0;
 }
+a {
+    color: inherit;
+    text-underline-offset: 4px;
+}
 .content {
     margin: 8px;
 }
@@ -73,7 +77,7 @@ body {
     padding-bottom: 0.25rem;
     line-height: 1.2;
 }
-.linklist {
+.list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -83,9 +87,13 @@ body {
     border-radius: 10px;
 }
 .titlebar {
-    display: flex;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    display: flex;
+    gap: 10px;
+}
+.titlebar > * {
+    align-self: flex-end;
 }
 .titlebar h1 {
     font-size: 1.5rem;
@@ -104,9 +112,6 @@ pre {
     padding: 0.5rem 1rem;
     overflow: auto;
 }
-a {
-    color: inherit;
-}
 .shadow {
     box-shadow: 4px 4px 10px #404040;
 }
@@ -114,6 +119,9 @@ a {
 .dark1 {
     background-color: var(--black2);
     color: var(--white2);
+}
+.dark1 a {
+    text-decoration-color: var(--grey3);
 }
 .dark1 .titlebar {
     background-color: var(--grey4);
@@ -152,6 +160,9 @@ a {
     background-color: var(--black2);
     color: var(--amber1);
 }
+.amber a {
+    text-decoration-color: var(--amber2);
+}
 .amber .titlebar {
     background-color: var(--amber2);
     color: var(--black3);
@@ -186,6 +197,9 @@ a {
     background-color: var(--black2);
     color: var(--green1);
 }
+.green a {
+    text-decoration-color: var(--green4);
+}
 .green .titlebar {
     background-color: var(--green3);
     color: var(--black3);
@@ -219,6 +233,9 @@ a {
 .blue {
     background-color: var(--black2);
     color: var(--blue3);
+}
+.blue a {
+    text-decoration-color: var(--blue1);
 }
 .blue .titlebar {
     background-color: var(--blue3);
@@ -260,18 +277,18 @@ a {
     margin-bottom: 1rem;
 }
 
-.basicform > div {
+.form_row {
     margin: 0;
     padding: 5px 0;
 }
-.basicform .action {
+.form_action {
     margin-top: 5px;
 }
-.basicform label {
+.label {
     display: block;
     margin-bottom: 4px;
 }
-.basicform .input {
+.input {
     display: block;
     width: 100%;
     padding: 5px;
@@ -279,10 +296,10 @@ a {
     font-size: inherit;
     line-height: inherit;
 }
-.basicform input, .basicform textarea {
+input[type="text"].input, textarea.input {
     border-radius: 5px;
 }
-.basicform .button {
+.button {
     padding: 2px 16px;
     font-family: inherit;
     font-size: inherit;

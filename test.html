@@ -9,6 +9,12 @@
 <body>
 <div class="titlebar">
     <h1 class="pill">The Everything Webpage</h1>
+    <select style="flex-basis: 100px;" class="input" id="theme" name="theme">
+        <option value="dark1">Dark</option>
+        <option value="green">Green</option>
+        <option value="amber">Amber</option>
+        <option value="blue">Blue</option>
+    </select>
 </div>
 <div class="content">
     <section class="row">
@@ -31,7 +37,7 @@
                     <label class="label" for="password">Password</label>
                     <input class="input" type="password" name="password" id="password" value="">
                 </div>
-                <div class="form_row form_action">
+                <div class="form_action">
                     <button class="button">Submit</button>
                 </div>
             </form>
@@ -86,6 +92,16 @@
     </section>
 
 </div>
+<script>
+var theme = document.querySelector("#theme");
+console.log(theme);
+theme.addEventListener("change", function(e) {
+    e.preventDefault();
+    var sel = e.currentTarget.value;
+    console.log(sel);
+    document.querySelector("html").className = sel;
+});
+</script>
 </body>
 </html>
 

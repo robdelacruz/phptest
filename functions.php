@@ -1,7 +1,7 @@
 <?php
 function create_tables($db) {
     $db = new SQLite3("db.sqlite");
-    $db->exec("CREATE TABLE user (user_id INTEGER PRIMARY KEY NOT NULL, username TEXT NOT NULL, password TEXT NOT NULL");
+    $db->exec("CREATE TABLE user (user_id INTEGER PRIMARY KEY NOT NULL, username TEXT NOT NULL, password TEXT NOT NULL)");
 }
 
 function register_user($db, $username, $pwd) {

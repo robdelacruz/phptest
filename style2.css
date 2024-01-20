@@ -1,0 +1,45 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.text-xs {font-size: 0.75rem; line-height: 1rem;}
+.text-sm {font-size: 0.875rem; line-height: 1.25rem;}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+html {
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+    background-color: rgb(17,24,39);
+    color: rgb(229,231,235);
+    font-size: 12px;
+    line-height: 1.5;
+}
+body {
+}
+.widget {
+    background-color: rgb(31,41,55);
+    color: rgb(229,231,235);
+    padding: 8px 12px;
+    margin: 12px 0;
+    width: 20rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+.page-heading {
+    font-weight: bold;
+    padding: 0.25rem 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.heading-underline {
+    border-color: rgb(107,114,128);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 0.25rem;
+}
+
+

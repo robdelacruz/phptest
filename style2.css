@@ -3,7 +3,6 @@
 }
 
 :root {
-    /* freerss theme */
     --bg-color: #111827;
     --fg-color: #e5e7eb;;
     --border-color: #6b7280;
@@ -11,20 +10,6 @@
     --link-color: #83cff6;
     --input-bg-color: #282828;
     --input-fg-color: #e7e9ea;
-    --titlebar-bg-color: var(--border-color);
-    --titlebar-bg-color: var(--bg-color);
-    --titlebar-border-color: #6b7280;
-
-    /* dark1 theme */
-    --bg-color: #272628;
-    --fg-color: #e7e9ea;
-    --border-color: #272628;
-    --box-bg-color: #16181c;
-    --link-color: #83cff6;
-    --input-bg-color: #282828;
-    --input-fg-color: #e7e9ea;
-    --titlebar-bg-color: var(--bg-color);
-    --titlebar-border-color: #6b7280;
 }
 
 .max-w-xs {max-width: 320px;}
@@ -72,7 +57,7 @@ html {
 }
 body {
     margin: 0;
-    padding: 0 0.5rem;
+    padding: 0;
 }
 a {
     text-decoration: none;
@@ -95,19 +80,17 @@ a {
 .pill {
     padding: 0.5rem 1.2rem;
     border-radius: 10px;
-
-    background-color: var(--box-bg-color);
-    color: var(--fg-color);
 }
 .titlebar {
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
     display: flex;
     gap: 10px;
 
-    background-color: var(--titlebar-bg-color);
-    border-color: var(--titlebar-border-color);
+    border-color: var(--border-color);;
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    padding-bottom: 0.25rem;
 }
 .titlebar .pill {
 }

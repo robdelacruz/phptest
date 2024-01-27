@@ -3,6 +3,19 @@
 }
 
 :root {
+    /* dark1 theme */
+    --bg-color: #272628;
+    --fg-color: #e7e9ea;
+    --border-color: #272628;
+    --box-bg-color: #16181c;
+    --link-color: #83cff6;
+    --input-bg-color: #282828;
+    --input-fg-color: #e7e9ea;
+    --titlebar-bg-color: var(--bg-color);
+    --titlebar-border-color: #6b7280;
+}
+
+.freerss {
     /* freerss theme */
     --bg-color: #111827;
     --fg-color: #e5e7eb;;
@@ -12,17 +25,6 @@
     --input-bg-color: #282828;
     --input-fg-color: #e7e9ea;
     --titlebar-bg-color: var(--border-color);
-    --titlebar-bg-color: var(--bg-color);
-    --titlebar-border-color: #6b7280;
-
-    /* dark1 theme */
-    --bg-color: #272628;
-    --fg-color: #e7e9ea;
-    --border-color: #272628;
-    --box-bg-color: #16181c;
-    --link-color: #83cff6;
-    --input-bg-color: #282828;
-    --input-fg-color: #e7e9ea;
     --titlebar-bg-color: var(--bg-color);
     --titlebar-border-color: #6b7280;
 }

@@ -9,6 +9,7 @@
     --border-color: #272628;
     --box-bg-color: #16181c;
     --link-color: #83cff6;
+    --link2-color: #6b7280;
     --input-bg-color: #282828;
     --input-fg-color: #e7e9ea;
     --titlebar-bg-color: var(--bg-color);
@@ -22,8 +23,16 @@
     --border-color: #6b7280;
     --box-bg-color: #1f2937;
     --link-color: #83cff6;
+    --link2-color: #6b7280;
+
+    /* input dark background */
     --input-bg-color: #282828;
     --input-fg-color: #e7e9ea;
+
+    /* input white background */
+    --input-bg-color: #e5e7eb;
+    --input-fg-color: #1f2937;
+
     --titlebar-bg-color: var(--border-color);
     --titlebar-bg-color: var(--bg-color);
     --titlebar-border-color: #6b7280;
@@ -160,7 +169,7 @@ pre {
 .input {
     display: block;
     width: 100%;
-    padding: 5px;
+    padding: 2px 5px;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
@@ -169,8 +178,9 @@ pre {
     color: var(--input-fg-color);
     border: 1px solid var(--border-color);
 }
-input[type="text"].input, textarea.input {
+input[type="text"].input, input[type="password"].input, textarea.input {
     border-radius: 5px;
+    border-radius: 0;
 }
 .button {
     padding: 2px 16px;

@@ -16,6 +16,21 @@
     --titlebar-border-color: #6b7280;
 }
 
+.grey {
+    --bg-color: grey;
+    --fg-color: #0d0c0c;
+    --fg-color: #000100;
+    --fg-color: #000000;
+    --border-color: #000100;
+    --box-bg-color: #c1c0c1;
+    --link-color: #67385e;
+    --link2-color: #67385e;
+    --input-bg-color: #fefffe;
+    --input-fg-color: #040404;
+    --titlebar-bg-color: var(--box-bg-color);
+    --titlebar-border-color: #6b7280;
+}
+
 .freerss {
     /* freerss theme */
     --bg-color: #111827;

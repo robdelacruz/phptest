@@ -1,14 +1,16 @@
 
 dep:
 	apt install nginx -y
-	apt install php8.1-fpm -y
-	apt install php8.1-sqlite3 -y
+#	apt install php8.1-fpm -y
+#	apt install php8.1-sqlite3 -y
+	apt install php-fpm -y
+	apt install php-sqlite3 -y
 
 status-nginx:
 	systemctl status nginx
 
 status-php:
-	systemctl status php8.1-fpm
+	systemctl status php8.3-fpm
 
 addconf:
 	cp phptest.conf /etc/nginx/sites-available/

@@ -12,6 +12,12 @@ status-nginx:
 status-php:
 	systemctl status php8.3-fpm
 
+restart-nginx:
+	systemctl restart nginx
+
+adduser:
+	gpasswd -a www-data `whoami`
+
 addconf:
 	cp phptest.conf /etc/nginx/sites-available/
 	ln -sf /etc/nginx/sites-available/phptest.conf /etc/nginx/sites-enabled/

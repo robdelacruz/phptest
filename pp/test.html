@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="dark1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>test</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="content">
+    <div class="row">
+        <div id="widget1" class="box max-w-md">
+            <h2 class="heading">Widget 1</h2>
+            <p>Text:</p>
+            <p class="text">(none)</p>
+            <script>
+            (function() {
+                var hr = new XMLHttpRequest();
+                hr.open("GET", "/pp/abc.txt");
+                hr.send();
+
+                hr.onload = function() {
+                    if (hr.status != 200) {
+                        console.log(`status: ${hr.status}`);
+                        return;
+                    }
+                    setTimeout(function() {
+                        document.querySelector(".text").innerText = hr.response;
+                    }, 1000);
+                };
+                hr.onerror = function() {
+                    console.log("Error");
+                }
+            })();
+            </script>
+        </div>
+        <div id="widget2" class="box max-w-md">
+            <h2 class="heading">Widget 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <script>
+            (function() {
+                console.log("widget 2");
+                var s1 = "widget2";
+                console.log(`widget2 s1: '${s1}'`);
+            })();
+            </script>
+        </div>
+    </div>
+
+</div>
+<script>
+/*
+*/
+</script>
+</body>
+</html>
+

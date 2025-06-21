@@ -10,7 +10,8 @@ status-nginx:
 	systemctl status nginx
 
 status-php:
-	systemctl status php8.3-fpm
+	systemctl status php8.1-fpm
+#	systemctl status php8.3-fpm
 
 restart-nginx:
 	systemctl restart nginx
@@ -26,3 +27,6 @@ addconf:
 delconf:
 	unlink /etc/nginx/sites-enabled/phptest.conf
 	rm -f /etc/nginx/sites-available/phptest.conf
+
+# To prevent 401 error:
+# chmod 755 /home/rob, /home/rob/src, /home/rob/src/phptest

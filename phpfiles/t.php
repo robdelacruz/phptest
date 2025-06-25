@@ -1,16 +1,10 @@
 <?php
 require "functions.php";
 
-$db = new SQLite3("db.sqlite");
-create_tables($db);
+$token = gen_token("robtwister", "bigdaddy");
+print "token: '$token'\n";
 
-//$sql = "SELECT user_id, username, password FROM user ORDER BY user_id";
-//$result = $db->query($sql);
+$f = password_verify("robtwister" . "bigdaddy", $token);
+print "password_verify(): $f\n";
 
-//while ($row = $result->fetchArray()) {
-//    extract($row, EXTR_REFS | EXTR_PREFIX_ALL, "rob");
-//    echo "user_id: {$rob_user_id}, username: {$rob_username}, password: {$rob_password}\n";
-//}
 ?>
-
-

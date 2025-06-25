@@ -1,0 +1,90 @@
+:root {
+    --fg1: #000;
+    --fg2: #addb67;
+    --fg3: #ecc48d;
+    --fg-err: #f00;
+    --bg1: #f6f6ef;
+    --bg2: #f6f6ef;
+    --fade0: #e2e8f0;
+    --fade1: #a0aec0;
+    --fade2: #4a5568;
+}
+.m-0 {margin: 0;}
+.m-xs {margin: 0.25rem;}
+.m-sm {margin: 0.5rem;}
+.m-base {margin: 1rem;}
+.m-lg {margin: 1.25rem;}
+.m-xl {margin: 1.5rem;}
+
+html {
+    font-family: serif;
+    font-family: "Verdana", "Geneva", sans-serif;
+    font-size: 12px;
+}
+body {
+    margin: 0 1rem;
+    padding: 0;
+    max-width: 900px;
+    min-height: 500px;
+    color: var(--fg1);
+    background-color: var(--bg1);
+}
+p, ul, li, h1, h2, h3, h4, blockquote {
+    margin: 0;
+    padding: 0;
+}
+a, a:visited {
+    color: inherit;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box {
+    border: 1px solid #ddd;
+}
+
+.heading {
+    font-size: 1rem;
+}
+.simpleform .control {
+    margin: 0.5em 0;
+    padding: 0;
+}
+.simpleform .control label {
+    display: block;
+}
+.simpleform .control.row label {
+    display: inline;
+}
+.simpleform .control.row [type=checkbox] {
+    margin-right: 0.5em;
+}
+.simpleform input:focus, .simpleform textarea:focus, .simpleform button:focus {
+    border: 0.3em solid var(--fg-2);
+}
+.simpleform .control button {
+    margin-right: 0.5em;
+}
+.simpleform .control.row {
+    display: flex;
+    flex-direction: row;
+}
+.simpleform .control.row label {
+    margin-right: 0.5em;
+}
+.simpleform textarea {
+    width: 100%;
+}
+.simpleform select {
+    padding: 0 1em;
+}
+select {
+    padding: 0 0.5em;
+}
+.submit {
+    font-weight: bold;
+}

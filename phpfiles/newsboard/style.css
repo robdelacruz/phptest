@@ -1,0 +1,217 @@
+:root {
+    --fg-1: #000;
+    --fg-2: #addb67;
+    --fg-3: #ecc48d;
+    --fg-err: #f00;
+    --bg-1: #f6f6ef;
+    --bg-2: #f6f6ef;
+    --fade-0: #e2e8f0;
+    --fade-1: #a0aec0;
+    --fade-2: #4a5568;
+}
+.m-0 {margin: 0;}
+.m-xs {margin: 0.25rem;}
+.m-sm {margin: 0.5rem;}
+.m-base {margin: 1rem;}
+.m-lg {margin: 1.25rem;}
+.m-xl {margin: 1.5rem;}
+
+.mt-xs {margin-top: 0.25rem;}
+.mt-sm {margin-top: 0.5rem;}
+.mt-base {margin-top: 1rem;}
+.mt-lg {margin-top: 1.25rem;}
+.mt-xl {margin-top: 1.5rem;}
+.mt-2xl {margin-top: 3rem;}
+
+.mb-xs {margin-bottom: 0.25rem;}
+.mb-sm {margin-bottom: 0.5rem;}
+.mb-base {margin-bottom: 1rem;}
+.mb-lg {margin-bottom: 1.25rem;}
+.mb-xl {margin-bottom: 1.5rem;}
+.mb-2xl {margin-bottom: 3rem;}
+
+.m-auto {margin: auto;}
+.mx-auto {margin-left: auto; margin-right: auto;}
+.my-auto {margin-top: auto; margin-bottom: auto;}
+
+.px-1 {padding-left: 0.25rem; padding-right: 0.25rem;}
+.mx-1 {margin-left: 0.25rem; margin-right: 0.25rem;}
+.mr-1 {margin-right: 0.25rem;}
+.mr-2 {margin-right: 0.5rem;}
+
+.text-xs {font-size: 0.75rem;}
+.text-sm {font-size: 0.875rem;}
+.text-base {font-size: 1rem;}
+.text-lg {font-size: 1.125rem;}
+.text-xl {font-size: 1.25rem;}
+
+.text-fg-1 {color: var(--fg-1);}
+.text-fg-2 {color: var(--fg-2);}
+.text-fg-3 {color: var(--fg-3);}
+.text-bg-1 {background-color: var(--bg-1);}
+.text-fade-0 {color: var(--fade-0);}
+.text-fade-1 {color: var(--fade-1);}
+.text-fade-2 {color: var(--fade-2);}
+.text-italic {font-style: italic;}
+.text-bold {font-weight: bold;}
+
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.text-justify {text-align: justify;}
+
+.w-full {width: 100%;}
+
+.underline {text-decoration: underline;}
+.no-underline {text-decoration: none;}
+.uppercase {text-transform: uppercase;}
+
+.flex {display: flex;}
+.flex-grow {flex-grow: 1;}
+.flex-grow-0 {flex-grow: 0;}
+.flex-shrink {flex-shrink: 1;}
+.flex-shrink-0 {flex-shrink: 0;}
+.justify-start {justify-content: flex-start;}
+.justify-between {justify-content: space-between;}
+
+.block {display: block;}
+.inline-block {display: inline-block;}
+.inline {display: inline;}
+
+p, ul, li, h1, h2, h3, h4, blockquote {
+    margin: 0;
+    padding: 0;
+}
+a, a:visited {
+    color: inherit;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box {
+    border: 1px solid #ddd;
+}
+.btn-pill-0 {background-color: rgba(27,31,35,.05); padding: 0.2em 0.4em; border-radius: 3px;}
+.tag-pill {background-color: rgba(27,31,35,.05); padding: 0.2em 0.4em; border-radius: 3px; font-size: 0.875rem;}
+
+.heading {
+    font-size: 1rem;
+}
+.content .heading, .content h1, .content h2, .content h3, .content h4, .content h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.content p, .content .heading, .content ul {
+    margin-bottom: 0.5rem;
+}
+.content ul {
+    margin-left: 2rem;
+}
+
+.list-none {list-style-type: none;}
+.vertical-list {
+    list-style-type: none;
+}
+.vertical-list li {
+    margin-bottom: 0.5rem;
+}
+.line-menu {
+    list-style-type: none;
+}
+.line-menu li {
+    display: inline;
+}
+.line-menu li:not(:first-child)::before {
+    content: " | ";
+}
+.byline {
+    font-size: 0.75rem;
+}
+.byline, .byline a {
+    color: var(--fade-2);
+}
+.byline a {
+    text-decoration: none;
+}
+
+.masthead {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .right {
+    text-align: right;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar a:not(:last-child) {
+    margin-right: 0.25em;
+}
+.navbar .heading {
+    display: inline;
+    margin-right: 0.5em;
+}
+.navbar ul {
+    display: inline;
+}
+
+.error, .warning {
+    color: var(--fg-err);
+}
+.success {
+    color: var(--fg-2); /* green */
+}
+.simpleform .control {
+    margin: 0.5em 0;
+    padding: 0;
+}
+.simpleform .control label {
+    display: block;
+}
+.simpleform .control.row label {
+    display: inline;
+}
+.simpleform .control.row [type=checkbox] {
+    margin-right: 0.5em;
+}
+.simpleform input:focus, .simpleform textarea:focus, .simpleform button:focus {
+    border: 0.3em solid var(--fg-2);
+}
+.simpleform .control button {
+    margin-right: 0.5em;
+}
+.simpleform .control.row {
+    display: flex;
+    flex-direction: row;
+}
+.simpleform .control.row label {
+    margin-right: 0.5em;
+}
+.simpleform textarea {
+    width: 100%;
+}
+.simpleform select {
+    padding: 0 1em;
+}
+select {
+    padding: 0 0.5em;
+}
+.submit {
+    font-weight: bold;
+}
+.displayonly input, .displayonly textarea {
+    background-color: var(--fade-0);
+}
+.highlight {
+    color: var(--fg-1);
+    background-color: var(--bg-2);
+}
+

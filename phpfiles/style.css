@@ -19,15 +19,13 @@
 html {
     font-family: serif;
     font-family: "Verdana", "Geneva", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 body {
-    margin: 0 1rem;
+    margin: 0;
     padding: 0;
     max-width: 900px;
     min-height: 500px;
-    color: var(--fg1);
-    background-color: var(--bg1);
 }
 p, ul, li, h1, h2, h3, h4, blockquote {
     margin: 0;
@@ -44,6 +42,9 @@ a, a:visited {
     justify-content: space-between;
 }
 .box {
+    color: var(--fg1);
+    background-color: var(--bg1);
+    padding: 0.5rem;
     border: 1px solid #ddd;
 }
 

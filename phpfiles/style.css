@@ -17,9 +17,10 @@
 .m-xl {margin: 1.5rem;}
 
 html {
-    font-family: serif;
-    font-family: "Verdana", "Geneva", sans-serif;
-    font-size: 14px;
+    font: 14px "Verdana", "Geneva", sans-serif;
+    color: var(--fg1);
+    background-color: #fff;
+    line-height: 1.5;
 }
 body {
     margin: 0;
@@ -31,6 +32,9 @@ p, ul, li, h1, h2, h3, h4, blockquote {
     margin: 0;
     padding: 0;
 }
+p {
+    margin: 0 0 1rem;
+}
 a, a:visited {
     color: inherit;
 }
@@ -41,11 +45,11 @@ a, a:visited {
     flex-direction: row;
     justify-content: space-between;
 }
-.box {
-    color: var(--fg1);
-    background-color: var(--bg1);
-    padding: 0.5rem;
+.window {
+/*    margin: 0 1rem 0 0;*/
+    padding: 1.5rem;
     border: 1px solid #ddd;
+    background-color: var(--bg1);
 }
 
 .heading {
@@ -58,14 +62,8 @@ a, a:visited {
 .simpleform .control label {
     display: block;
 }
-.simpleform .control.row label {
-    display: inline;
-}
-.simpleform .control.row [type=checkbox] {
-    margin-right: 0.5em;
-}
 .simpleform input:focus, .simpleform textarea:focus, .simpleform button:focus {
-    border: 0.3em solid var(--fg-2);
+    border: 2px solid;
 }
 .simpleform .control button {
     margin-right: 0.5em;
@@ -75,6 +73,10 @@ a, a:visited {
     flex-direction: row;
 }
 .simpleform .control.row label {
+    margin-right: 0.5em;
+    display: inline;
+}
+.simpleform .control.row [type=checkbox] {
     margin-right: 0.5em;
 }
 .simpleform textarea {

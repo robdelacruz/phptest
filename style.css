@@ -18,6 +18,7 @@
 
 html {
     font: 14px "Verdana", "Geneva", sans-serif;
+    font-family: system-ui;
     color: var(--fg1);
     background-color: #fff;
 /*    background-color: var(--fade2);*/
@@ -40,6 +41,23 @@ p {
 }
 a, a:visited {
     color: inherit;
+}
+table {
+    border-collapse: collapse;
+}
+caption {
+    text-align: left;
+    font-weight: 700;
+}
+th {
+    background-color: rgba(0,0,0, 0.2);
+}
+th, td {
+    text-align: left;
+    padding: 0.2rem 0.5rem;
+}
+tr:nth-child(2n+1) {
+    background-color: rgba(0,0,0, 0.1);
 }
 .heading {
     font-size: 1rem;

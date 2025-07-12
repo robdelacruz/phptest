@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button, select, textarea {
+    font: inherit;
+}
+button {
+    padding: 0.2rem 0.75rem;
+}
+
 :root {
     --fg1: #000;
     --fg2: #addb67;

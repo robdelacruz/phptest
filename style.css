@@ -9,6 +9,8 @@ input, button, select, textarea {
 }
 input, select, textarea {
     width: 100%;
+    background-color: #eee;
+    padding: 0 0.5rem;
 }
 button {
     padding: 0.2rem 0.75rem;
@@ -35,7 +37,7 @@ button {
 html {
     font: 14px "Verdana", "Geneva", sans-serif;
     font-family: system-ui;
-    color: var(--fg1);
+    color: 0;
     background-color: #aaa;
     line-height: 1.5;
 }
@@ -71,6 +73,13 @@ tr:nth-child(2n+1) {
 .heading {
     font-size: 1rem;
 }
+.masthead {
+    height: 50px;
+}
+.masthead h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
 .content {
     margin: 0 auto;
     padding: 1rem;
@@ -81,28 +90,34 @@ tr:nth-child(2n+1) {
 .grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 300px 600px auto;
 }
-.leftcol {
-    display: grid;
-    gap: 1rem;
-/*    border-right: 1px solid #ddd;*/
+.login {
+    grid-column: 1;
 }
-.rightcol {
-    display: grid;
-    gap: 1rem;
+.expenses {
+    grid-column: 3 / 4;
+}
+.textview {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+.formentry {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.moretext {
 }
 .flex-row {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-/*    justify-content: space-between;*/
     justify-content: flex-start;
 }
 .panel {
-/*    border: 1px solid #ddd;*/
-/*    background-color: var(--bg1);*/
+    /*border: 1px solid #ddd;*/
     background-color: #fff;
+    box-shadow: 2px 2px #aaa;
 }
 .panel > * {
     padding: 1rem 1.5rem;
@@ -112,9 +127,10 @@ tr:nth-child(2n+1) {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-/*    margin: 0 auto 1rem;*/
-    color: var(--fg1);
-    background-color: var(--bgtitle);
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #005500;
+    color: #fff;
 }
 .navbar a {
     text-decoration: none;
@@ -128,8 +144,6 @@ tr:nth-child(2n+1) {
     margin-right: 0.5rem;
 }
 .titlebar {
-    color: var(--fg1);
-    background-color: var(--bgtitle);
     background-color: #008800;
     color: #fff;
     font-weight: bold;
@@ -149,14 +163,17 @@ tr:nth-child(2n+1) {
 .line-menu li:not(:first-child)::before {
     content: " | ";
 }
+.line-menu li.sel {
+    1font-weight: 700;
+    border-bottom: 1px solid;
+}
 .simpleform .control {
     margin: 0.5em 0;
-    padding: 0;
 }
 .simpleform .control label {
     display: block;
 }
-.simpleform input:focus, .simpleform textarea:focus, .simpleform button:focus {
+input:focus, textarea:focus, button:focus {
     border: 2px solid;
 }
 .simpleform .control button {
@@ -173,9 +190,6 @@ tr:nth-child(2n+1) {
 .simpleform .control.row [type=checkbox] {
     margin-right: 0.5em;
 }
-.simpleform textarea {
-    width: 100%;
-}
 .simpleform select {
     padding: 0 1em;
 }
@@ -184,4 +198,18 @@ select {
 }
 .submit {
     font-weight: bold;
+}
+
+.entryform {
+    display: grid;
+    gap: 0.5rem;
+}
+.entryform .control {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 12ch auto;
+    margin: 0.2em 0;
+}
+.entryform label {
+    text-align: right;
 }

@@ -1,10 +1,20 @@
 <?php
-require "functions.php";
 
-$token = gen_token("robtwister", "bigdaddy");
-print "token: '$token'\n";
+setcookieval("userid", 456);
+$userid = getcookieval("userid");
 
-$f = password_verify("robtwister" . "bigdaddy", $token);
-print "password_verify(): $f\n";
+$vartype = gettype($userid);
+print("userid type is '$vartype'\n");
+print("userid: '$userid'\n");
+
+function setcookieval($k, $v) {
+    setcookie($k, $v);
+    $_COOKIE[$k] = $v;
+}
+function getcookieval($k) {
+    if (isset($_COOKIE[$k]))
+        return $_COOKIE[$k];
+    return null;
+}
 
 ?>
